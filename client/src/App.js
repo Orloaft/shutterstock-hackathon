@@ -1,11 +1,16 @@
-import "./App.css";
 import { Component } from "react";
+import axios from "axios";
 
 class App extends Component {
   state = {
     welcome: null,
   };
-  componentDidMount() {}
+  componentDidMount() {
+    axios.get("http://localhost:8080").then((result) => {
+      console.log(result.data);
+      this.setState({ welcome: result.data });
+    });
+  }
 
   render() {
     return (
