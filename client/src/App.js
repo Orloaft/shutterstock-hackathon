@@ -1,6 +1,8 @@
 import { Component } from "react";
 import axios from "axios";
 import "./App.scss";
+import forest from "./assets/videos/forest.mp4";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   state = {
@@ -16,7 +18,12 @@ class App extends Component {
   render() {
     return (
       <section className="app">
-        {/* {this.state.welcome && this.state.welcome} */}
+        <BrowserRouter>
+          <Switch>
+            {/* <Route path="/" exact component={HomePage} />
+            <Route path="/inspiration" component={InspirePage} /> */}
+          </Switch>
+        </BrowserRouter>
       </section>
     );
   }
