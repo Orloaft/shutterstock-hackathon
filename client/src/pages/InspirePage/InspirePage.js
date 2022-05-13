@@ -5,8 +5,11 @@ import hero from "../../assets/images/hero.png";
 import { objArray as images } from "../../data/images";
 import weeklyInspire from "../../assets/images/weeklynspiration.png";
 import footer from "../../assets/images/footer.png";
+import {FiZoomIn} from 'react-icons/fi'
 
 export const InspirePage = ({ handleClick }) => {
+
+  const style = {color: 'white', fontSize: '30px'}
   return (
     <div>
       <img className="hero" src={hero} />
@@ -22,7 +25,7 @@ export const InspirePage = ({ handleClick }) => {
                   }}
                   className="popup-button"
                 >
-                  <image className="popup-button--image" src={zoom} />
+                  <FiZoomIn style={style}/>
                 </button>
                 <img
                   className="inspiration__image"
