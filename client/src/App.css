@@ -17,6 +17,14 @@ html {
 .app {
   font-family: Roboto;
 }
+.app__home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  width: 6rem;
+  z-index: 4;
+}
 
 .nav-item {
   font-weight: 700;
