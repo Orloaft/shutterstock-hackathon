@@ -9,3 +9,30 @@
 .nav-item {
   font-weight: 700;
 }
+
+.navbar {
+
+  &__top {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 2;
+  }
+
+  &__left {
+  position: fixed;
+  z-index: 1;
+  top: 4rem;
+
+  &-container {
+    background-color: white;
+    width: 4.05rem;
+    height: 100vh;
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    position: fixed;
+    padding-bottom: 2rem;
+    top: 0;
+  }
+  }
+}
