@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../../assets/fonts/Roboto-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../../assets/fonts/Roboto-Bold.woff2);
+  font-weight: 700;
+  font-style: bold;
+}
+.detail {
+  max-height: 100vh;
+}
+.detail__container {
+  border: 0.5px solid #767676;
+  border-radius: 0.9375rem;
+  padding: 0.5rem 1rem;
+}
+.detail__name {
+  color: #0d77f1;
+}
+.detail__image {
+  width: 30%;
+}
+.detail__detail {
+  margin: 0;
+}
+.detail__price {
+  color: #767676;
+}
+.detail__item-info {
+  display: flex;
+}
+.detail__copyicon {
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  height: 10%;
+}
+.detail__buttons-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+.detail__buttonDownload {
+  font-size: 1rem;
+  font-weight: 700;
+  width: 19rem;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  border: none;
+  background-color: #f54336;
+  color: white;
+  margin-bottom: 1rem;
+}
+.detail__buttonCancel {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  border: none;
+  background-color: white;
+  color: #0d77f1;
+  width: 19rem;
+}/*# sourceMappingURL=ImgDetail.css.map */

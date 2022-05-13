@@ -4,66 +4,66 @@
 @use "../../styles/partials/fonts" as *;
 
 .detail {
+  max-height: 100vh;
 
-    &__container {
-        border: 0.5px solid $shutterstock-grey;
-        border-radius: .9375rem;
-        padding: 0.5rem 1rem;
-    }
+  &__container {
+    border: 0.5px solid $shutterstock-grey;
+    border-radius: 0.9375rem;
+    padding: 0.5rem 1rem;
+  }
 
-    &__name {
-        color: #0D77F1;
-    }
+  &__name {
+    color: #0d77f1;
+  }
 
-    &__image {
-        width: 30%; 
-    }
+  &__image {
+    width: 30%;
+  }
 
-    &__detail {
-        margin: 0;
-    }
+  &__detail {
+    margin: 0;
+  }
 
-    &__price {
-        color: $shutterstock-grey;
-    }
+  &__price {
+    color: $shutterstock-grey;
+  }
 
-    &__item-info {
-        display: flex;
-    }
-    &__copyicon {
-        margin-left: 0.5rem;
-        margin-top: 1rem;
-        height: 10%;
-    }
+  &__item-info {
+    display: flex;
+  }
+  &__copyicon {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    height: 10%;
+  }
 
-    &__buttons-container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 1.5rem;
-        align-items: center;
-    }
+  &__buttons-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    align-items: center;
+  }
 
-    &__buttonDownload {
-        font-size: 1rem;
-        font-weight: 700;
-        width: 19rem;
-        padding: 0.75rem 2rem;
-        border-radius: 30px;
-        border: none;
-        background-color: $shutterstock-red;
-        color: white;
-        margin-bottom: 1rem;
-    }
+  &__buttonDownload {
+    font-size: 1rem;
+    font-weight: 700;
+    width: 19rem;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    border: none;
+    background-color: $shutterstock-red;
+    color: white;
+    margin-bottom: 1rem;
+  }
 
-    &__buttonCancel {
-        font-size: 1rem;
-        font-weight: 700;
-        padding: 0.75rem 2rem;
-        border-radius: 30px;
-        border: none;
-        background-color: white;
-        color: #0D77F1;
-        width: 19rem;
-    }
-
+  &__buttonCancel {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    color: #0d77f1;
+    width: 19rem;
+  }
 }
