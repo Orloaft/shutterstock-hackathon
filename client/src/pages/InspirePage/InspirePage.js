@@ -2,6 +2,7 @@ import "./InspirePage.scss";
 import navbartop from "../../assets/images/navbartop.png";
 import navbarside from "../../assets/images/sidenavbar.png";
 import ace from "../../assets/images/ace.svg";
+import { v4 as uuidv4 } from "uuid";
 const imageArray = [ace, ace, ace, ace, ace, ace, ace, ace, ace];
 
 export const InspirePage = ({ handleClick }) => {
@@ -21,6 +22,7 @@ export const InspirePage = ({ handleClick }) => {
           {imageArray.map((img) => {
             return (
               <img
+                key={uuidv4()}
                 onClick={(e) => {
                   handleClick(img);
                 }}
