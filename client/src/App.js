@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <section className="app">
-        {this.state.welcome && this.state.welcome}
+        {/* {this.state.welcome && this.state.welcome} */}
       </section>
     );
   }
