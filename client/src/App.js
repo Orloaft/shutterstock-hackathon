@@ -1,6 +1,7 @@
 import { Component } from "react";
 import axios from "axios";
 import "./App.scss";
+import HomePage from './pages/HomePage/HomePage';
 
 class App extends Component {
   state = {
@@ -16,6 +17,7 @@ class App extends Component {
   render() {
     return (
       <section className="app">
+        <HomePage />
         {this.state.welcome && this.state.welcome}
       </section>
     );
