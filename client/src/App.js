@@ -13,12 +13,16 @@ class App extends Component {
   state = {
     show: false,
     imagePopup: null,
+    stockImage: null,
+    author: null,
   };
 
-  showModal = (image) => {
+  showModal = (image, stock, author) => {
     this.setState({
       show: true,
       imagePopup: image,
+      stockImage: stock,
+      author: author,
     });
   };
 
@@ -54,6 +58,8 @@ class App extends Component {
           show={this.state.show}
           image={this.state.imagePopup}
           handleClick={this.hideModal}
+          author={this.state.author}
+          stockImage={this.state.stockImage}
         />
       </section>
     );

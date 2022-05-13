@@ -63,8 +63,7 @@
   top: 10%;
   right: 10%;
 }
-.popup-button__image {
+.popup-button--image {
   height: 2.5rem;
   width: 2.5rem;
-  z-index: 4;
 }/*# sourceMappingURL=InspirePage.css.map */
