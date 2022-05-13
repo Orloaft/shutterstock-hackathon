@@ -4,9 +4,10 @@
 @use "../../styles/partials/fonts" as *;
 
 .inspiration {
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  margin: 6rem;
+  margin-left: 4rem;
   &__hero {
     width: 100vw;
     z-index: -2;
@@ -14,7 +15,7 @@
   }
 
   &__gallery {
-    padding: 1rem 2rem 1rem 8rem;
+    padding: 1rem 2rem 1rem 4rem;
     display: flex;
     flex-wrap: wrap;
     &-heading {
@@ -24,8 +25,14 @@
 
   &__image {
     height: 10rem;
-    width: 15rem;
+    width: 20rem;
     margin: 1rem;
     border-radius: 0.5rem;
   }
+  &__weekly-banner {
+    width: 95%;
+  }
+}
+.footer {
+  width: 95%;
 }

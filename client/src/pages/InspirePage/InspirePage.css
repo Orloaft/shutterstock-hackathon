@@ -11,9 +11,10 @@
   font-style: bold;
 }
 .inspiration {
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  margin: 6rem;
+  margin-left: 4rem;
 }
 .inspiration__hero {
   width: 100vw;
@@ -21,7 +22,7 @@
   margin-left: 4rem;
 }
 .inspiration__gallery {
-  padding: 1rem 2rem 1rem 8rem;
+  padding: 1rem 2rem 1rem 4rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -30,7 +31,14 @@
 }
 .inspiration__image {
   height: 10rem;
-  width: 15rem;
+  width: 20rem;
   margin: 1rem;
   border-radius: 0.5rem;
+}
+.inspiration__weekly-banner {
+  width: 95%;
+}
+
+.footer {
+  width: 95%;
 }/*# sourceMappingURL=InspirePage.css.map */

@@ -27,6 +27,8 @@ import sarahDor from "../../assets/images/sarah-dorweiler.jpg";
 import sebastianTurtle from "../../assets/images/sebastian-turtle.gif";
 import srilanka from "../../assets/images/sri_lanka.png";
 import turtle from "../../assets/images/turtle.jpg";
+import weeklyInspire from "../../assets/images/weeklynspiration.png";
+import footer from "../../assets/images/footer.png";
 
 const imageArray = [
   mountainApp,
@@ -45,7 +47,6 @@ export const InspirePage = ({ handleClick }) => {
     <div>
       <img className="hero" src={hero} />
       <section className="inspiration">
-        <div className="inspiration__hero"></div>
         <div className="inspiration__gallery">
           <h2 className="inspiration__gallery-heading"> Featured Creators</h2>
           {imageArray.map((img) => {
@@ -62,6 +63,8 @@ export const InspirePage = ({ handleClick }) => {
             );
           })}
         </div>
+        <img src={weeklyInspire} className="inspiration__weekly-banner"></img>
+        <img src={footer} className="footer"></img>
       </section>
     </div>
   );
