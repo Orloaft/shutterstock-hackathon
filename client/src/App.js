@@ -5,7 +5,7 @@ import forest from "./assets/videos/forest.mp4";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import { InspirePage } from "./pages/InspirePage/InspirePage";
-import PopupModal from "./components/PopupModal";
+import PopupModal from "./components/PopupModal/PopupModal";
 import navbartop from "./assets/images/navbartop.png";
 import navbarside from "./assets/images/sidenavbar.png";
 

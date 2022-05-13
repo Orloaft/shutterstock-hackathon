@@ -1,5 +1,5 @@
 import "./InspirePage.scss";
-
+import zoom from "../../assets/images/zoom.png";
 import { v4 as uuidv4 } from "uuid";
 import hero from "../../assets/images/hero.png";
 import { objArray as images } from "../../data/images";
@@ -15,15 +15,21 @@ export const InspirePage = ({ handleClick }) => {
           <h2 className="inspiration__gallery-heading"> Featured Creators</h2>
           {images.map((obj) => {
             return (
-              <img
-                key={uuidv4()}
-                onClick={(e) => {
-                  handleClick(obj.stock);
-                }}
-                className="inspiration__image"
-                src={obj.product}
-                alt="shutterstock ace"
-              ></img>
+              <div key={uuidv4()} className="inspiration__image-wrapper">
+                <button
+                  onClick={(e) => {
+                    handleClick(obj.stock);
+                  }}
+                  className="popup-button"
+                >
+                  <image className="popup-button--image" src={zoom} />
+                </button>
+                <img
+                  className="inspiration__image"
+                  src={obj.product}
+                  alt="shutterstock ace"
+                ></img>
+              </div>
             );
           })}
         </div>

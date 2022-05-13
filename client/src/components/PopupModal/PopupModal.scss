@@ -1,7 +1,7 @@
-@use "../styles/partials/variables" as *;
-@use "../styles/partials/global" as *;
-@use "../styles/partials/mixins" as *;
-@use "../styles/partials/fonts" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/fonts" as *;
 
 .modal {
   border-radius: 0.75rem;
@@ -16,8 +16,8 @@
   &__image {
     width: 30rem;
     height: 30rem;
-    
-    &-container{
+
+    &-container {
       display: flex;
       flex-direction: column;
       width: 30rem;
