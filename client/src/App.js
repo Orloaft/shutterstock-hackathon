@@ -45,7 +45,7 @@ class App extends Component {
           </Switch>
           <PopupModal
             show={this.state.show}
-            handleClose={this.hideModal}
+            handleClick={this.hideModal}
             image={this.state.imagePopup}
           />
         </BrowserRouter>

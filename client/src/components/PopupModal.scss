@@ -15,14 +15,11 @@
     top: -10rem;
   }
   &--display {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    width: 65%;
-    align-self: center;
-    top: 12rem;
-    height: 19rem;
-    right: 15rem;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
   }
   &--hide {
     display: none;
