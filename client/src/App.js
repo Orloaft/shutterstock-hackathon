@@ -21,8 +21,8 @@ class App extends Component {
       <section className="app">
         <BrowserRouter>
           <Switch>
-            {/* <Route path="/" exact component={HomePage} />
-            <Route path="/inspiration" component={InspirePage} /> */}
+            <Route path="/" exact component={HomePage} />
+            {/* <Route path="/inspiration" component={InspirePage} /> */}
           </Switch>
         </BrowserRouter>
       </section>
