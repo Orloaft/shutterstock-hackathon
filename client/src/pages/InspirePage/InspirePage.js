@@ -2,8 +2,9 @@ import "./InspirePage.scss";
 import navbartop from "../../assets/images/navbartop.png";
 import navbarside from "../../assets/images/sidenavbar.png";
 import icon from "../../assets/images/icon.png";
+const imageArray = [icon, icon, icon, icon, icon, icon, icon, icon, icon];
 
-export const InspirePage = () => {
+export const InspirePage = ({ handleClick }) => {
   return (
     <div>
       <img className="navbar__top" src={navbartop} />
@@ -16,51 +17,18 @@ export const InspirePage = () => {
           ></input>
         </div>
         <div className="inspiration__gallery">
-          <img
-            className="inspiration__image"
-            src={icon}
-            alt="shutterstock icon"
-          ></img>
-          <img
-            className="inspiration__image"
-            src={icon}
-            alt="shutterstock icon"
-          ></img>
-          <img
-            className="inspiration__image"
-            src={icon}
-            alt="shutterstock icon"
-          ></img>
-          <img
-            className="inspiration__image"
-            src={icon}
-            alt="shutterstock icon"
-          ></img>
-          <img
-            className="inspiration__image"
-            src={icon}
-            alt="shutterstock icon"
-          ></img>
-          <img
-            className="inspiration__image"
-            src={icon}
-            alt="shutterstock icon"
-          ></img>
-          <img
-            className="inspiration__image"
-            src={icon}
-            alt="shutterstock icon"
-          ></img>
-          <img
-            className="inspiration__image"
-            src={icon}
-            alt="shutterstock icon"
-          ></img>
-          <img
-            className="inspiration__image"
-            src={icon}
-            alt="shutterstock icon"
-          ></img>
+          {imageArray.map((img) => {
+            return (
+              <img
+                onClick={(e) => {
+                  handleClick(img);
+                }}
+                className="inspiration__image"
+                src={img}
+                alt="shutterstock icon"
+              ></img>
+            );
+          })}
         </div>
       </section>
       <img className="navbar__left" src={navbarside} />

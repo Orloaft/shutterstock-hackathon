@@ -1,30 +1,30 @@
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/global" as *;
+@use "../styles/partials/mixins" as *;
+@use "../styles/partials/fonts" as *;
+
 .modal {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-}
-.modal--display {
-  background-color: $White;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-
-  @include tablet {
+  &__image {
+    width: 30rem;
+    height: 30rem;
+    z-index: 3;
+    position: relative;
+    top: -10rem;
+  }
+  &--display {
     position: absolute;
+    z-index: 2;
+    top: 0;
     width: 65%;
     align-self: center;
-    right: 9rem;
     top: 12rem;
     height: 19rem;
-  }
-
-  @include desktop {
     right: 15rem;
   }
-}
-
-.modal--hide {
-  display: none;
+  &--hide {
+    display: none;
+  }
 }
