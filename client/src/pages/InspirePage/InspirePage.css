@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../../assets/fonts/Roboto-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../../assets/fonts/Roboto-Bold.woff2);
+  font-weight: 700;
+  font-style: bold;
+}
+.inspiration {
+  display: flex;
+  flex-direction: column;
+  margin: 6rem;
+}
+.inspiration__hero {
+  width: 100vw;
+  z-index: -2;
+  margin-left: 4rem;
+}
+.inspiration__gallery {
+  padding: 1rem 2rem 1rem 8rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.inspiration__gallery-heading {
+  width: 100%;
+}
+.inspiration__image {
+  height: 10rem;
+  width: 15rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}/*# sourceMappingURL=InspirePage.css.map */

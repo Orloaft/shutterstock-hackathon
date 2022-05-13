@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../../assets/fonts/Roboto-Regular.woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../../assets/fonts/Roboto-Bold.woff2);
+  font-weight: 700;
+  font-style: bold;
+}
+.modal {
+  border-radius: 0.75rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  background-color: white;
+}
+.modal__info {
+  padding: 1rem;
+}
+.modal__image {
+  width: 30rem;
+  height: 30rem;
+}
+.modal--display {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+.modal--hide {
+  display: none;
+}
+
+.close {
+  height: 1rem;
+  border-style: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.wrapper {
+  background: #000;
+  opacity: 0.35;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.wrapper--hide {
+  display: none;
+}/*# sourceMappingURL=PopupModal.css.map */
