@@ -6,20 +6,14 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import { InspirePage } from "./pages/InspirePage/InspirePage";
 import PopupModal from "./components/PopupModal";
-import navbartop from './assets/images/navbartop.png';
-import navbarside from './assets/images/sidenavbar.png'
+import navbartop from "./assets/images/navbartop.png";
+import navbarside from "./assets/images/sidenavbar.png";
 
 class App extends Component {
   state = {
     show: false,
     imagePopup: null,
   };
-  componentDidMount() {
-    axios.get("http://localhost:8080").then((result) => {
-      console.log(result.data);
-      this.setState({ welcome: result.data });
-    });
-  }
 
   showModal = (image) => {
     this.setState({
@@ -35,29 +29,31 @@ class App extends Component {
   render() {
     return (
       <section className="app">
-          <header className='navbar'>
-            <img className='navbar__top' src={navbartop} />
+        <div className={`overlay ${this.state.show ? "overlay--blur" : ""}`}>
+          <header className="navbar">
+            <img className="navbar__top" src={navbartop} />
             <img />
-            <nav className='navbar__left-container'>
-              <img className='navbar__left' src={navbarside}/>
+            <nav className="navbar__left-container">
+              <img className="navbar__left" src={navbarside} />
             </nav>
           </header>
-        <BrowserRouter>
-          <Switch>
-            <Route path="/" exact component={HomePage} />
-            <Route
-              path="/inspiration"
-              render={() => {
-                return <InspirePage handleClick={this.showModal} />;
-              }}
-            />
-          </Switch>
-          <PopupModal
-            show={this.state.show}
-            handleClick={this.hideModal}
-            image={this.state.imagePopup}
-          />
-        </BrowserRouter>
+          <BrowserRouter>
+            <Switch>
+              <Route path="/" exact component={HomePage} />
+              <Route
+                path="/inspiration"
+                render={() => {
+                  return <InspirePage handleClick={this.showModal} />;
+                }}
+              />
+            </Switch>
+          </BrowserRouter>
+        </div>
+        <PopupModal
+          show={this.state.show}
+          image={this.state.imagePopup}
+          handleClick={this.hideModal}
+        />
       </section>
     );
   }

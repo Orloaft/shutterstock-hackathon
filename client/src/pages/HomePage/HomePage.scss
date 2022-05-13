@@ -3,53 +3,54 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/fonts" as *;
 
-
 .hero {
-    width: 100vw;
-    z-index: -2;
-    margin-left: 4rem;
+  width: 100vw;
+  z-index: -2;
+  margin-left: 4rem;
+  position: relative;
+  right: 2.5rem;
 }
 
 .inspire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f5;
+  padding: 2rem 12rem;
+
+  &__title {
+    align-self: flex-start;
+    font-size: 2rem;
+  }
+
+  &__container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #F3F4F5;
-    padding: 2rem 12rem;
+    justify-content: space-between;
+  }
+  &__img {
+    width: 100%;
+    min-width: 100%;
+    border-radius: 8px;
 
-    &__title {
-        align-self: flex-start;
-        font-size: 2rem;
+    &-container {
+      width: 100%;
+      margin-right: 2rem;
     }
+  }
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__img {
-        width: 100%;
-        min-width: 100%;
-        border-radius: 8px;
-
-        &-container {
-            width: 100%;
-            margin-right: 2rem;
-        }
-    }
-
-    &__button {
-        font-size: 1rem;
-        font-weight: 700;
-        padding: 0.75rem 3rem;
-        margin: 2rem;
-        border-radius: 30px;
-        border: none;
-        background-color: $shutterstock-red;
-        color: white;
-    }
+  &__button {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.75rem 3rem;
+    margin: 2rem;
+    border-radius: 30px;
+    border: none;
+    background-color: $shutterstock-red;
+    color: white;
+  }
 }
 
 .main {
-    width: 100vw;
+  width: 100vw;
 }

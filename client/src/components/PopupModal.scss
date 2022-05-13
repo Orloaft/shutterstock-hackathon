@@ -4,6 +4,8 @@
 @use "../styles/partials/fonts" as *;
 
 .modal {
+  border-radius: 0.75rem;
+  z-index: 10;
   display: flex;
   flex-direction: row;
   padding: 1rem;
@@ -33,23 +35,17 @@
   top: 1rem;
   right: 1rem;
 }
-.overlay {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba($color: #000000, $alpha: 1);
-  &--show::after {
-    content: " ";
-    z-index: 10;
-    display: block;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5);
+
+.wrapper {
+  background: #000;
+  opacity: 0.35;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  &--hide {
+    display: none;
   }
-  // &--hidden {
-  //   display: none;
-  // }
 }
