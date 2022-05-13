@@ -30,8 +30,8 @@
   width: 100%;
 }
 .inspiration__image {
-  height: 10rem;
-  width: 20rem;
+  height: 25rem;
+  width: 30rem;
   margin: 1rem;
   border-radius: 0.5rem;
 }
@@ -40,6 +40,12 @@
 }
 .inspiration__image-wrapper {
   position: relative;
+  margin-right: 1rem;
+  width: 30%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 30%;
 }
 
 .footer {
