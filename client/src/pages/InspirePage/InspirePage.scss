@@ -1,0 +1,40 @@
+.navbar {
+  &__top {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+  }
+
+  &__left {
+    position: absolute;
+    z-index: -1;
+    top: 5vh;
+  }
+}
+.inspiration {
+  display: flex;
+  flex-direction: column;
+  margin: 6rem;
+  &__hero {
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/videos/forest.mp4);
+  }
+  &__search {
+    height: 3rem;
+    width: 100%;
+  }
+  &__gallery {
+    padding: 1rem 2rem 1rem 8rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    height: 15rem;
+    width: 15rem;
+    margin: 1rem;
+  }
+}
