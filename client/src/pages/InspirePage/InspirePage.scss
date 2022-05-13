@@ -3,19 +3,6 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/fonts" as *;
 
-.navbar {
-  &__top {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-  }
-
-  &__left {
-    position: absolute;
-    z-index: -1;
-    top: 5vh;
-  }
-}
 .inspiration {
   display: flex;
   flex-direction: column;

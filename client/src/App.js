@@ -6,6 +6,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import { InspirePage } from "./pages/InspirePage/InspirePage";
 import PopupModal from "./components/PopupModal";
+import navbartop from './assets/images/navbartop.png';
+import navbarside from './assets/images/sidenavbar.png'
 
 class App extends Component {
   state = {
@@ -33,6 +35,13 @@ class App extends Component {
   render() {
     return (
       <section className="app">
+          <header className='navbar'>
+            <img className='navbar__top' src={navbartop} />
+            <img />
+            <nav className='navbar__left-container'>
+              <img className='navbar__left' src={navbarside}/>
+            </nav>
+          </header>
         <BrowserRouter>
           <Switch>
             <Route path="/" exact component={HomePage} />
