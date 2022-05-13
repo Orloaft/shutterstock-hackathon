@@ -29,32 +29,31 @@ class App extends Component {
   render() {
     return (
       <section className="app">
-        {/* <div
-          className={`wrapper ${this.state.show ? "" : "wrapper--hide"}`}
-        ></div> */}
-        <header className="navbar">
-          <img className="navbar__top" src={navbartop} />
-          <img />
-          <nav className="navbar__left-container">
-            <img className="navbar__left" src={navbarside} />
-          </nav>
-        </header>
-        <BrowserRouter>
-          <Switch>
-            <Route path="/" exact component={HomePage} />
-            <Route
-              path="/inspiration"
-              render={() => {
-                return <InspirePage handleClick={this.showModal} />;
-              }}
-            />
-          </Switch>
-          <PopupModal
-            show={this.state.show}
-            image={this.state.imagePopup}
-            handleClick={this.hideModal}
-          />
-        </BrowserRouter>
+        <div className={`overlay ${this.state.show ? "overlay--blur" : ""}`}>
+          <header className="navbar">
+            <img className="navbar__top" src={navbartop} />
+            <img />
+            <nav className="navbar__left-container">
+              <img className="navbar__left" src={navbarside} />
+            </nav>
+          </header>
+          <BrowserRouter>
+            <Switch>
+              <Route path="/" exact component={HomePage} />
+              <Route
+                path="/inspiration"
+                render={() => {
+                  return <InspirePage handleClick={this.showModal} />;
+                }}
+              />
+            </Switch>
+          </BrowserRouter>
+        </div>
+        <PopupModal
+          show={this.state.show}
+          image={this.state.imagePopup}
+          handleClick={this.hideModal}
+        />
       </section>
     );
   }
