@@ -2,7 +2,7 @@ import { Component } from "react";
 import axios from "axios";
 import "./App.scss";
 import forest from "./assets/videos/forest.mp4";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import { InspirePage } from "./pages/InspirePage/InspirePage";
 import PopupModal from "./components/PopupModal";
@@ -38,6 +38,7 @@ class App extends Component {
             </nav>
           </header>
           <BrowserRouter>
+            <Link className="app__home" to="/" />
             <Switch>
               <Route path="/" exact component={HomePage} />
               <Route
