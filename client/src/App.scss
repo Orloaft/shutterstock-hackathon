@@ -3,6 +3,9 @@
 @use "./styles/partials/mixins" as *;
 @use "./styles/partials/fonts" as *;
 
+html {
+  overflow-x: hidden;
+}
 .app {
   font-family: Roboto;
 }

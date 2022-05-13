@@ -3,7 +3,7 @@ import navbartop from "../../assets/images/navbartop.png";
 import navbarside from "../../assets/images/sidenavbar.png";
 import ace from "../../assets/images/ace.svg";
 import { v4 as uuidv4 } from "uuid";
-
+import hero from "../../assets/images/hero.png";
 import allthings from "../../assets/images/allthings.png";
 import appNyc from "../../assets/images/app_nyc.png";
 import benjaminBoat from "../../assets/images/benjamin-boat.jpg";
@@ -43,15 +43,9 @@ const imageArray = [
 export const InspirePage = ({ handleClick }) => {
   return (
     <div>
-      <img className="navbar__top" src={navbartop} />
+      <img className="hero" src={hero} />
       <section className="inspiration">
-        <div className="inspiration__hero">
-          <input
-            type="text"
-            className="inspiration__search"
-            placeholder="Search"
-          ></input>
-        </div>
+        <div className="inspiration__hero"></div>
         <div className="inspiration__gallery">
           <h2 className="inspiration__gallery-heading"> Featured Creators</h2>
           {imageArray.map((img) => {
@@ -69,7 +63,6 @@ export const InspirePage = ({ handleClick }) => {
           })}
         </div>
       </section>
-      <img className="navbar__left" src={navbarside} />
     </div>
   );
 };
