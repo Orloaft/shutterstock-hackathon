@@ -1,13 +1,19 @@
 .navbar {
-  &__top {
+    &__top {
     position: absolute;
     top: 0;
     width: 100vw;
-  }
+    }
 
-  &__left {
+    &__left {
     position: absolute;
     z-index: -1;
     top: 5vh;
-  }
+    }
+}
+
+.inspire {
+    &__img {
+        width: 40%;
+    }
 }
