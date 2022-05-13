@@ -1,13 +1,66 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/fonts" as *;
+
+
 .navbar {
-  &__top {
+    &__top {
     position: absolute;
     top: 0;
     width: 100vw;
-  }
+    z-index: 2;
+    }
 
-  &__left {
+    &__left {
     position: absolute;
-    z-index: -1;
-    top: 5vh;
-  }
+    z-index: 1;
+    top: 3.4vh;
+        &-container {
+            position: absolute;
+            background-color: white;
+            height: 100%;
+        }
+    }
+}
+
+.hero {
+    width: 100vw;
+}
+
+.inspire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 12rem;
+    background-color: #F3F4F5;
+    padding: 2rem;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+    &__title {
+        align-self: flex-start;
+    }
+    &__img {
+        width: 20%;
+        margin: 0 2rem;
+        border-radius: 8px;
+    }
+
+    &__button {
+        font-size: 1.5rem;
+        padding: 0.75rem 1rem;
+        margin: 1rem;
+        border-radius: 10px;
+        border: none;
+        background-color: $shutterstock-red;
+        color: white;
+    }
+}
+
+.main {
+    width: 100vw;
 }
