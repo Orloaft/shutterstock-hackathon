@@ -7,20 +7,24 @@
   border-radius: 0.75rem;
   z-index: 10;
   display: flex;
-  flex-direction: row;
-  padding: 1rem;
+  flex-direction: column;
   background-color: $shutterstock-white;
+
+  &__container {
+    display: flex;
+  }
   &__info {
     padding: 1rem;
+    width: 35%;
   }
   &__image {
-    width: 30rem;
+    width: 100%;
     height: 30rem;
     
     &-container{
       display: flex;
       flex-direction: column;
-      width: 30rem;
+      width: 50rem;
     }
   }
   &__score {
@@ -31,10 +35,22 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
   }
   &--hide {
     display: none;
+  }
+  
+  &__footer {
+    background-color: #222834;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    &-icons {
+      width: 30%;
+      padding: 1rem;
+
+    }
   }
 }
 .close {
@@ -58,3 +74,5 @@
     display: none;
   }
 }
+
+

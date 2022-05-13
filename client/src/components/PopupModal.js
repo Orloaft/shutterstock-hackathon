@@ -2,6 +2,7 @@ import React from "react";
 import "./PopupModal.scss";
 import ImgDetail from '../components/ImgDetail/ImgDetail';
 import scoring from '../assets/images/scoring.png';
+import iconsPop from '../assets/images/iconsPop.png';
 
 function PopupModal({ show, image, handleClick }) {
   //logic to show or hide the Modal
@@ -15,6 +16,7 @@ function PopupModal({ show, image, handleClick }) {
     <>
       <div className={`wrapper ${show ? "" : "wrapper--hide"}`}></div>
       <div className={`modal ${toggleModal}`}>
+        <div className="modal__container">
         <button onClick={handleClick} className="close">
           X
         </button>
@@ -25,6 +27,10 @@ function PopupModal({ show, image, handleClick }) {
         <aside className="modal__info">
           <ImgDetail handleClick={handleClick}/>
         </aside>
+        </div>
+        <div className='modal__footer'>
+          <img className='modal__footer-icons' src={iconsPop}/>
+        </div>
       </div>
     </>
   );
