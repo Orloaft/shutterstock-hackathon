@@ -8,7 +8,8 @@ import { InspirePage } from "./pages/InspirePage/InspirePage";
 
 class App extends Component {
   state = {
-    welcome: null,
+    show: false,
+    imagePopup: null,
   };
   componentDidMount() {
     axios.get("http://localhost:8080").then((result) => {
@@ -16,6 +17,17 @@ class App extends Component {
       this.setState({ welcome: result.data });
     });
   }
+
+  showModal = (image) => {
+    this.setState({
+      show: true,
+      imagePopup: image,
+    });
+  };
+
+  hideModal = () => {
+    this.setState({ show: false, imagePopup: null });
+  };
 
   render() {
     return (
