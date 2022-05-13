@@ -61,9 +61,9 @@
   border-style: none;
   position: absolute;
   top: 10%;
-  right: 5%;
+  right: 10%;
 }
-.popup-button__image {
+.popup-button--image {
   height: 2.5rem;
   width: 2.5rem;
 }/*# sourceMappingURL=InspirePage.css.map */
