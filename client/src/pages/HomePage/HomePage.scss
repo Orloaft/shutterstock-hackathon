@@ -20,6 +20,7 @@
 
     &__title {
         align-self: flex-start;
+        font-size: 2rem;
     }
 
     &__container {
@@ -27,8 +28,14 @@
         justify-content: space-between;
     }
     &__img {
-        width: 30%;
+        width: 100%;
+        min-width: 100%;
         border-radius: 8px;
+
+        &-container {
+            width: 100%;
+            margin-right: 2rem;
+        }
     }
 
     &__button {
