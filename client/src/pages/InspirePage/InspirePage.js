@@ -18,11 +18,11 @@ export const InspirePage = ({ handleClick }) => {
               <div key={uuidv4()} className="inspiration__image-wrapper">
                 <button
                   onClick={(e) => {
-                    handleClick(obj.stock);
+                    handleClick(obj.product, obj.stock, obj.author);
                   }}
                   className="popup-button"
                 >
-                  <image className="popup-button--image" src={zoom} />
+                  {/* <image className="popup-button__image" src={zoom} /> */}
                 </button>
                 <img
                   className="inspiration__image"

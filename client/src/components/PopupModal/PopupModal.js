@@ -4,7 +4,7 @@ import ImgDetail from "../ImgDetail/ImgDetail";
 import scoring from "../../assets/images/scoring.png";
 import iconsPop from "../../assets/images/iconsPop.png";
 
-function PopupModal({ show, image, handleClick }) {
+function PopupModal({ show, image, handleClick, author, stockImage }) {
   //logic to show or hide the Modal
   const toggleModal = show ? "modal--display" : "modal--hide";
 
@@ -25,7 +25,11 @@ function PopupModal({ show, image, handleClick }) {
             <img className="modal__score" src={scoring} />
           </div>
           <aside className="modal__info">
-            <ImgDetail handleClick={handleClick} />
+            <ImgDetail
+              handleClick={handleClick}
+              author={author}
+              stockImage={stockImage}
+            />
           </aside>
         </div>
         <div className="modal__footer">
