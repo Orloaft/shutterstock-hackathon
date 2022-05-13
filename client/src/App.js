@@ -3,6 +3,7 @@ import axios from "axios";
 import "./App.scss";
 import forest from "./assets/videos/forest.mp4";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
 
 class App extends Component {
   state = {
